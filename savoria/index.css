@@ -1,0 +1,341 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 20px;
+    box-shadow: 0px 4px 7px 4px rgb(22, 22, 22);
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+.logo {
+    margin-left: 11px;
+}
+
+.logo h1 {
+    border-bottom: 4px solid rgb(247, 2, 2);
+    width: 115px;
+    border-radius: 2px;
+    border-bottom-right-radius: 18px;
+    font-family: 'Courgette', cursive;
+    font-size: 34px;
+    color: rgb(243, 4, 4);
+}
+
+nav ul {
+    display: flex;
+    margin-top: 8px;
+    margin-right: 46px;
+}
+
+ul a {
+    margin-inline: 31px;
+    text-decoration: none;
+    color: white;
+    margin-top: 6px;
+    cursor: pointer;
+
+}
+
+nav ul a:hover {
+    border-bottom: 2px solid red;
+    font-weight: 600;
+    color: red;
+}
+
+ul button {
+    width: 70px;
+    height: 30px;
+    background-color: rgb(224, 4, 4);
+    border: none;
+    font-size: 18px;
+    outline: none;
+    color: white;
+    border-radius: 2px;
+}
+
+ul button:hover {
+    border: 2px solid red;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.main img {
+    width: 38%;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 183px;
+}
+
+.main h1 {
+    font-size: 48px;
+}
+
+.main .off {
+    color: rgb(39, 164, 247);
+    margin-top: 22px;
+    font-size: 33px;
+}
+
+.text p {
+    margin-top: 22px;
+    color: silver;
+}
+
+.text button {
+    width: 140px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: rgb(238, 5, 5);
+    color: white;
+    font-size: 22px;
+    margin-top: 32px;
+
+}
+
+.text button:hover {
+    background-color: transparent;
+    border: 3px solid red;
+    font-size: 24px;
+    transition: 0.6s ease;
+    cursor: pointer;
+}
+
+.head {
+    position: relative;
+    top: 65px;
+    padding: 73px;
+    text-align: center;
+}
+
+.head span {
+    color: rgb(65, 149, 245);
+}
+
+.crd {
+    display: flex;
+    justify-content: center;
+    margin-top: 52px;
+}
+
+.card {
+    width: 300px;
+    background-color: #fff;
+    margin-inline: 22px;
+    color: black;
+    border-radius: 10px;
+}
+
+.card:hover {
+    background-color: rgb(46, 46, 46);
+    color: #fff;
+    transition: 0.7s ease;
+}
+
+.crd img {
+    width: 100%;
+    text-align: center;
+}
+
+.cardText {
+    padding: 12px;
+}
+
+.cardText p {
+    margin-top: 11px;
+}
+
+.cardText button {
+    margin-top: 21px;
+    width: 100px;
+    height: 31px;
+    background-color: rgb(236, 4, 4);
+    color: white;
+    border: none;
+    font-size: 17px;
+}
+
+.cardText button:hover {
+    background-color: transparent;
+    border: 2px solid rgb(235, 4, 4);
+    cursor: pointer;
+}
+
+.track {
+    display: flex;
+    justify-content: center;
+    color: white;
+    margin-top: 44px;
+}
+
+.track i {
+    font-size: 174px;
+    color: red;
+    cursor: pointer;
+}
+
+.track i:hover {
+    color: rgb(50, 130, 252);
+
+}
+
+.track button {
+    width: 140px;
+    height: 40px;
+    background-color: rgb(236, 4, 4);
+    color: white;
+    font-size: 22px;
+    border: none;
+    margin-top: 22px;
+    cursor: pointer;
+}
+
+.track button:hover {
+    border: 3px solid rgb(240, 5, 5);
+    background-color: transparent;
+}
+
+.track h2 {
+    margin-top: 22px;
+}
+
+.track img {
+    margin-left: 123px;
+    width: 20%;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    padding: 65px;
+    margin-top: 63px;
+    cursor: pointer;
+}
+
+.footerText {
+    color:white;
+    font-size: medium;
+    
+}
+footer.clicked {
+    color: red;
+    font-size: medium;
+}
+
+/* log In */
+
+#logPage {
+    display: none;
+    position: absolute;
+    margin-left: 81%;
+    margin-top: -7%;
+    width: 220px;
+    padding: 22px;
+    background-color: #8b1717;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#logPage button {
+    width: 80px;
+    height: 28px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 2px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+.slider-container {
+    width: 95%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+#prev, #next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+.banner-container {
+    display: flex;
+    overflow-x: auto; /* Use 'auto' to show the scrollbar only when necessary */
+    white-space: nowrap; /* Prevent banners from wrapping to the next line */
+    scrollbar-width: thin; /* Adjust the scrollbar width as needed */
+    scrollbar-color: #131212 #050505; /* Adjust the scrollbar colors */
+    background: black;
+}
+
+.banner {
+    flex: 0 0 25%; /* Adjust the width of each banner as needed */
+    margin: 10px;
+    background-color: #161515;
+    padding: 20px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    white-space: normal; /* Allow text to wrap within the banner */
+
+}
+
+.banner img {
+    width: 82%;
+    height: auto;
+    border-radius: 8px;
+}
+#map-container {
+    display: none;
+    height: 450px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
